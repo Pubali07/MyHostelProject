@@ -1,0 +1,118 @@
+/* Background */
+.loginPage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #faf6fa 0%, #e396e8 100%);
+    padding: 20px;
+  }
+  
+  /* Card with Glass Effect */
+  .loginCard {
+    width: 450px;
+    max-width: 90%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    padding: 40px 30px;
+    text-align: center;
+    color: #efdbdb;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .loginCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Heading */
+  .loginCard h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+  
+  .subtitle {
+    color: #250e46;
+    margin-bottom: 25px;
+  }
+  
+  /* Form */
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .loginForm input {
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .loginForm input::placeholder {
+    color: hsl(0, 11%, 98%);
+  }
+  
+  .loginForm input:focus {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Button */
+  .loginForm button {
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: #6b30c3;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .loginForm button:hover {
+    background-color: #4c1c8f;
+  }
+  
+  /* Extra links */
+  .extraLinks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .extraLinks .forgot,
+  .extraLinks .signup strong {
+    color: #f5ecf2;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .extraLinks .forgot:hover,
+  .extraLinks .signup strong:hover {
+    color: #fff;
+  }
+  
+  /* Responsive */
+  @media (max-width: 500px) {
+    .loginCard {
+      padding: 30px 20px;
+    }
+  
+    .loginForm input,
+    .loginForm button {
+      font-size: 0.95rem;
+      padding: 12px;
+    }
+  }
+  

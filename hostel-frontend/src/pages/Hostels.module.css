@@ -1,0 +1,113 @@
+.hostelsSection {
+  padding: 50px 20px;
+  background: #fff8f0;
+  text-align: center;
+}
+
+.hostelsSection h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #8a74f9;
+}
+
+.hostelsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Bigger space between cards */
+}
+
+/* CARD SIZE UPDATED */
+.hostelCard {
+  width: 280px;
+  height: 320px; /* Increased height so text fits */
+  perspective: 1000px;
+}
+
+.cardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+/* Hover/flip */
+.hostelCard:hover .cardInner {
+  transform: rotateY(180deg);
+}
+
+/* FRONT AND BACK */
+.cardFront,
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Top align content */
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  overflow: hidden; /* text won't overflow */
+}
+
+/* FRONT */
+.cardFront {
+  background: #ffffff;
+}
+
+/* IMAGE STYLING */
+.hostelImage {
+  width: 100%;
+  height: 180px; /* consistent height */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+/* Title styling */
+.cardFront h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #6b30c3;
+  padding: 0 10px; /* extra padding so long text fits */
+  word-wrap: break-word;
+}
+
+/* BACK */
+.cardBack {
+  transform: rotateY(180deg);
+  background: linear-gradient(135deg, #8a74f9, #b46bf5);
+  color: #ffffff;
+  padding: 20px;
+  gap: 10px;
+  text-align: center;
+}
+
+/* Back Text */
+.cardBack p {
+  font-size: 1rem;
+  line-height: 1.4;
+  padding: 0 10px;
+  word-wrap: break-word; /* Prevent overflow */
+}
+
+/* Buttons */
+.cardBack button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #37168b;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.cardBack button:hover {
+  background-color: #5e2d1f;
+}

@@ -1,0 +1,279 @@
+/* Modern Booking Manager Styles */
+.container {
+    display: flex;
+    gap: 32px;
+    padding: 60px 40px;
+    background: linear-gradient(135deg, #f8faff 0%, #e8f2ff 100%);
+    min-height: 100vh;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  /* Form Card */
+  .formCard {
+    background: white;
+    padding: 32px;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(138, 116, 249, 0.15);
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid rgba(138, 116, 249, 0.1);
+    transition: all 0.3s ease;
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+  }
+  
+  .formCard:hover {
+    box-shadow: 0 15px 50px rgba(138, 116, 249, 0.2);
+    transform: translateY(-4px);
+  }
+  
+  .formCard h3 {
+    margin: 0 0 8px 0;
+    background: linear-gradient(135deg, #8a74f9 0%, #ff8c42 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+  
+  .formCard label {
+    font-size: 14px;
+    color: #475569;
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+  }
+  
+  .formCard input[type="date"],
+  .formCard input[type="text"],
+  .formCard select {
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    background: #f8fafc;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .formCard input:focus,
+  .formCard select:focus {
+    outline: none;
+    border-color: #8a74f9;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(138, 116, 249, 0.1);
+  }
+  
+  .bookBtn {
+    margin-top: 12px;
+    padding: 14px 24px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(135deg, #8a74f9 0%, #ff8c42 100%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(138, 116, 249, 0.3);
+  }
+  
+  .bookBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(138, 116, 249, 0.4);
+  }
+  
+  .bookBtn:active {
+    transform: translateY(0);
+  }
+  
+  /* List Card */
+  .listCard {
+    flex: 1;
+    min-width: 400px;
+    background: white;
+    padding: 32px;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(138, 116, 249, 0.1);
+    border: 1px solid rgba(138, 116, 249, 0.1);
+  }
+  
+  .listCard h3 {
+    background: linear-gradient(135deg, #8a74f9 0%, #ff8c42 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 0;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  
+  .empty {
+    color: #94a3b8;
+    text-align: center;
+    padding: 40px;
+    font-size: 1rem;
+  }
+  
+  /* Bookings List */
+  .bookingsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .bookingItem {
+    border-left: 4px solid #8a74f9;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8faff 0%, white 100%);
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(138, 116, 249, 0.08);
+    transition: all 0.3s ease;
+  }
+  
+  .bookingItem:hover {
+    transform: translateX(8px);
+    box-shadow: 0 8px 25px rgba(138, 116, 249, 0.15);
+    border-left-width: 6px;
+  }
+  
+  .bookingItem strong {
+    color: #1e293b;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  
+  .slot {
+    color: #64748b;
+    font-size: 13px;
+    margin-top: 4px;
+    font-weight: 500;
+  }
+  
+  .meta {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  /* Grouped Booking View */
+  .grouped {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .dayGroup {
+    border-radius: 16px;
+    background: linear-gradient(135deg, #f8faff 0%, #e8f2ff 100%);
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(138, 116, 249, 0.08);
+    border: 1px solid rgba(138, 116, 249, 0.1);
+  }
+  
+  .dayHeader {
+    font-weight: 700;
+    background: linear-gradient(135deg, #8a74f9 0%, #ff8c42 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 16px;
+    font-size: 1.25rem;
+  }
+  
+  .smallCard {
+    background: white;
+    margin-bottom: 12px;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(138, 116, 249, 0.06);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(138, 116, 249, 0.05);
+  }
+  
+  .smallCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(138, 116, 249, 0.12);
+  }
+  
+  .smallCard:last-child {
+    margin-bottom: 0;
+  }
+  
+  .smallTitle {
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  .smallMeta {
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 40px 20px;
+    }
+  
+    .formCard {
+      position: static;
+      width: 100%;
+      max-width: 500px;
+    }
+  
+    .listCard {
+      min-width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      gap: 24px;
+      padding: 30px 15px;
+    }
+  
+    .formCard,
+    .listCard {
+      width: 100%;
+      padding: 24px;
+    }
+  
+    .bookingItem {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .formCard h3,
+    .listCard h3 {
+      font-size: 1.5rem;
+    }
+  
+    .dayHeader {
+      font-size: 1.125rem;
+    }
+  }

@@ -1,0 +1,38 @@
+.rooms-container {
+    padding: 40px;
+    background-color: #fff8f0;
+    text-align: center;
+  }
+  
+  .rooms-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .room-card {
+    background-color: #ffe4d6;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+  }
+  
+  .room-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .room-card button {
+    margin-top: 10px;
+    padding: 6px 10px;
+    background-color: #d67c4f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .room-card button:hover {
+    background-color: #8c4a2f;
+  }
+  

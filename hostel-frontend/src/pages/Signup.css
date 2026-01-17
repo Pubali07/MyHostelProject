@@ -1,0 +1,114 @@
+/* Background */
+.signupPage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e6baf0 0%, #d68870 100%);
+    padding: 20px;
+  }
+  
+  /* Card with Glass Effect */
+  .signupCard {
+    width: 450px;
+    max-width: 90%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    padding: 40px 30px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .signupCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Heading */
+  .signupCard h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+  
+  .subtitle {
+    color: #f9f7fc;
+    margin-bottom: 25px;
+  }
+  
+  /* Form */
+  .signupForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .signupForm input {
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .signupForm input::placeholder {
+    color: #eee;
+  }
+  
+  .signupForm input:focus {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Button */
+  .signupForm button {
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: #6b30c3;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .signupForm button:hover {
+    background-color: #4c1c8f;
+  }
+  
+  /* Extra links */
+  .extraLinks {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .extraLinks .login strong {
+    color: #ffd1f0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .extraLinks .login strong:hover {
+    color: #ffffff;
+  }
+  
+  /* Responsive */
+  @media (max-width: 500px) {
+    .signupCard {
+      padding: 30px 20px;
+    }
+  
+    .signupForm input,
+    .signupForm button {
+      font-size: 0.95rem;
+      padding: 12px;
+    }
+  }
+  
